@@ -9,9 +9,9 @@ Import a CSV file into ElasticSearch.
 
 ## Installation
 
-```
+```sh
 npm i --save csv-elasticsearch
-// or
+# or
 yarn add csv-elasticsearch
 ```
 
@@ -23,13 +23,15 @@ You need a CSV file and ElasticSearch.
 import { importCsv } from "csv-elasticsearch";
 import { Client } from "@elastic/elasticsearch";
 
-const client = new Client({ node: "http://localhost:9200" });
+(async () => {
+  const client = new Client({ node: "http://localhost:9200" });
 
-const result = await importCsv({
-  client,
-  index: "my_index",
-  filePath: "./data.csv",
-});
+  const result = await importCsv({
+    client,
+    index: "my_index",
+    filePath: "./data.csv",
+  });
 
-console.log(result);
+  console.log(result);
+})();
 ```
