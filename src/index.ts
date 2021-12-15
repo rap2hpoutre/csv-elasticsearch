@@ -19,11 +19,9 @@ export async function importCsv(options: ImportCsvOptions) {
   const records = [];
   for await (const record of parser) {
     records.push(record);
-    console.log(record);
   }
 
   const body = records.flatMap((doc) => [{ index: { _index: index } }, doc]);
-  console.log(body);
 
   // Delete index
   try {
