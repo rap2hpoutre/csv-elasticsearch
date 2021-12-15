@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/rap2hpoutre/csv-elasticsearch/compare/v1.1.1...v1.1.2) (2021-12-15)
+
+
+### Bug Fixes
+
+* fix ci ([e47309a](https://github.com/rap2hpoutre/csv-elasticsearch/commit/e47309a2f508595d81019227f4987902c85bfc5d))
+
 ## [1.1.1](https://github.com/rap2hpoutre/csv-elasticsearch/compare/v1.1.0...v1.1.1) (2021-12-15)
 
 
