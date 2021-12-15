@@ -1,11 +1,11 @@
 # Csv ElasticSearch
 
-Import a CSV file into ElasticSearch.
-
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-yellow.svg)](http://unlicense.org/)
 [![Version](https://img.shields.io/npm/v/csv-elasticsearch.svg)](https://npmjs.org/package/csv-elasticsearch)
 [![CodeQL](https://github.com/rap2hpoutre/csv-elasticsearch/workflows/CodeQL/badge.svg)](https://github.com/rap2hpoutre/csv-elasticsearch-dataset/actions?query=codeql-analysis "Code quality workflow status")
 [![Build and release](https://github.com/rap2hpoutre/csv-elasticsearch/actions/workflows/release.yml/badge.svg)](https://github.com/rap2hpoutre/csv-elasticsearch-dataset/actions?query=release)
+
+Import a CSV file into ElasticSearch.
 
 ## Installation
 
