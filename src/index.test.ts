@@ -1,4 +1,4 @@
-import { importCsv } from "../src/index";
+import { importCsv } from "./index";
 import { Client } from "@elastic/elasticsearch";
 import * as fs from "fs";
 
