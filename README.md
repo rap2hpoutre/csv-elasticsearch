@@ -17,7 +17,10 @@ yarn add csv-elasticsearch
 
 ## Usage
 
-You need a CSV file and ElasticSearch.
+You have to import `importCsv` function, then call it with three params:
+ - **client**: elasticsearch client thanks to [@elastic/elasticsearch](https://www.npmjs.com/package/@elastic/elasticsearch)
+ - **index**: elasticsearch index name.
+ - **filePath**: path to CSV file.
 
 ```ts
 import { importCsv } from "csv-elasticsearch";
@@ -32,4 +35,29 @@ import { Client } from "@elastic/elasticsearch";
 
   console.log(result);
 })();
+```
+
+Result in console:
+
+```
+{
+  count: 1000,
+  erroredDocuments: []
+}
+```
+
+Search created documents: http://localhost:9200/my_index/_search?pretty
+
+## Test and build
+
+Run test with [jest](https://jestjs.io/):
+
+```
+yarn dev
+```
+
+Build with [ncc](https://github.com/vercel/ncc):
+
+```
+ncc build src/index.ts
 ```
