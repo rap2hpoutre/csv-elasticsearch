@@ -24,10 +24,8 @@ import { importCsv } from "csv-elasticsearch";
 import { Client } from "@elastic/elasticsearch";
 
 (async () => {
-  const client = new Client({ node: "http://localhost:9200" });
-
   const result = await importCsv({
-    client,
+    client: new Client({ node: "http://localhost:9200" }),
     index: "my_index",
     filePath: "./data.csv",
   });
